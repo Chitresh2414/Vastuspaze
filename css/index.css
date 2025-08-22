@@ -1,66 +1,156 @@
-*{
+/* Global Reset */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins','Times New Roman', Times, serif;
-
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
 }
-body{
+
+html, body {
     width: 100%;
     height: 100%;
-    background-color: #767373;
-    color: #333333;
-    line-height: 1.6;
 }
-nav{
- 
-    background-color: #696666;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #333333;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-}
-#logo{
-    width: 200px;
-    height: auto;
-    margin: 0 20px;
-}
-.navbar-nav {
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem 3rem;
 }
-.navbar-nav .nav-item {
-    margin: 0 10px;
+
+/* ✅ Left and Right Menus */
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
-#navbarNav li a{
-    font-size:0.8rem;
+
+.navbar-left a, .navbar-right a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
     text-transform: uppercase;
-    font-weight: 900;
-
-}
-
-#navbarNav li a:hover {
-    text-decoration: underline yellow;
-    color: #ffffff;
+    position: relative;
     transition: 0.3s ease-in-out;
-    animation: newAnimation 0.5s forwards;
-}
-@keyframes newAnimation {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.1); }
-    100% { transform: scale(1); }
-    
 }
 
-#navbarNav .active {
-    color: #ffffff;
-    font-weight: bold;
-    text-decoration: underline yellow;
+.navbar-left a:hover, .navbar-right a:hover {
+    color: #242424;
+    font-weight: 900;
+    transform: scale(1.05);
 }
 
+.navbar-left a::after, .navbar-right a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: yellow;
+    transition: width 0.3s ease-in-out;
+}
+
+.navbar-left a:hover::after, .navbar-right a:hover::after {
+    width: 100%;
+}
+
+.navbar-left .active, .navbar-right .active {
+    color: #242424;
+    font-weight: 900;
+}
+
+/* ✅ Logo */
+.navbar-logo img {
+    width: 160px;
+    height: auto;
+    margin: 0px 20px ;
+ 
+}
+
+/* ✅ Mobile Menu */
+.navbar-toggle {
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #333;
+}
+
+.navbar-phone {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    nav{
+        justify-content: space-between;
+    }
+    .navbar-left, .navbar-right {
+        display: none;
+    }
+
+    .navbar-logo img {
+        width: 140px;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-phone {
+        display: none;
+        position: absolute;
+        top: 52px;
+        right: 5px;
+        background: rgba(212, 207, 207, 0.398);
+        width: 200px;
+        flex-direction: column;
+        box-shadow: 0 5px 10px rgba(51, 50, 50, 0.5);
+        padding: 1rem;
+        z-index: 999;
+        border-radius: 10px;
+    }
+
+    .navbar-phone a {
+        display: block;
+        margin: 0.5rem;
+        padding: 0.5rem;
+        font-size: 1rem;
+        color: #333;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .navbar-phone a:hover {
+        background-color: yellow;
+        transition: width 0.3s ease-in-out;
+    }
+    .navbar-phone .active{
+          color: #242424;
+          font-weight: 900;
+         text-decoration: underline yellow;
+    }
+    .navbar-phone.show {
+        display: flex;
+    }
+}
+
+
+.hero-content {
+    padding-top: 10px;
+}
+.hero-content h1 {
+    font-size:2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
 .carousel-item{
     width: 800px;
     height: 600px;
@@ -73,9 +163,10 @@ nav{
     width: 90%;
     height: 90%;
     left: 50%;
-    top: 50%;
+    top: 40%;
     transform: translate(-50%, -50%);   
     z-index: 1;
     object-fit: cover;
     border-radius: 2% 2% 2% 2%;
 }
+
