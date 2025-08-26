@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
 /* Global Reset */
 * {
     margin: 0;
@@ -39,7 +41,7 @@ nav {
 .navbar-right a {
     text-decoration: none;
     color: #333;
-    font-weight: 500;
+    
     text-transform: uppercase;
     position: relative;
     transition: 0.3s ease-in-out;
@@ -48,7 +50,7 @@ nav {
 .navbar-left a:hover,
 .navbar-right a:hover {
     color: #242424;
-    font-weight: 900;
+    font-weight:600;
     transform: scale(1.05);
 }
 
@@ -72,7 +74,7 @@ nav {
 .navbar-left .active,
 .navbar-right .active {
     color: #242424;
-    font-weight: 900;
+    font-weight:600;
 }
 
 /* ✅ Logo */
@@ -94,6 +96,15 @@ nav {
 .navbar-phone {
     display: none;
 }
+.navbar-phone {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+.navbar-phone.show {
+    max-height: 500px;
+}
+
 
 @media (max-width: 992px) {
     nav {
@@ -134,7 +145,7 @@ nav {
         color: #333;
         text-decoration: none;
         text-transform: uppercase;
-        font-weight: 400;
+        
     }
 
     .navbar-phone a:hover {
@@ -142,12 +153,12 @@ nav {
         transition: width 0.3s ease-in-out;
         padding: 0.5rem 1rem;
         color: #242424;
-        font-weight: 900;
+        font-weight:600;
     }
 
     .navbar-phone .active {
         color: #242424;
-        font-weight: 900;
+        font-weight:600;
     }
 
     .navbar-phone.show {
@@ -159,6 +170,8 @@ nav {
 main {
     width: 100%;
     min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa, #e0e0e0);
+
 }
 
 .hero-content {
@@ -168,7 +181,7 @@ main {
 
 .hero-content>h1 {
     font-size: 2rem;
-    font-weight: 900;
+    font-weight:600;
     flex-wrap: wrap;
     letter-spacing: 0.1rem;
     text-transform: uppercase;
@@ -178,7 +191,7 @@ main {
 .swiper {
     /* Full screen height */
     width: 80%;
-    min-width: 1200px;
+    max-width: 1200px;
     height: 500px;
     margin: 40px auto;
     overflow: hidden;
@@ -208,6 +221,7 @@ main {
     color: #333;
     padding: 1.5rem 1.5rem;
     transition: color 0.3s;
+    background:#f5f5f5;
 }
 
 .footer-container {
@@ -249,7 +263,7 @@ main {
 .footer-links a:hover {
     text-decoration: underline #00b3ff;
     transition: width 0.3s ease-in-out;
-    font-weight: 900;
+    font-weight:600;
 }
 
 /* ✅ Contact & Social Icons */
@@ -268,19 +282,19 @@ main {
 
 .facebook:hover {
     color: #1877F2;
-    font-weight: 900;
+    font-weight:600;
 
 }
 
 .instagram:hover {
     color: #E1306C;
-    font-weight: 900;
+    font-weight:600;
 
 }
 
 .linkedin:hover {
     color: #0A66C2;
-    font-weight: 900;
+    font-weight:600;
 
 }
 
@@ -289,7 +303,7 @@ main {
     text-align: center;
     margin-top: 2rem;
     font-size: 0.9rem;
-    border-top: 1px solid #ddd;
+    border-top: 1px solid #2c2b2b;
     padding-top: 1rem;
 }
 
@@ -320,4 +334,181 @@ main {
 
 .navbar-phone.show {
     display: flex;
+}
+
+/* ✅ CTA Section */
+.cta {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+ 
+}
+
+.cta p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #00b3ff;
+  color: #fff;
+  font-size: 16px;
+  
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background: #008ecc;
+}
+
+/* ✅ SERVICES SECTION */
+.services {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #333;
+    
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #fef9f4;
+  padding: 25px;
+  border-radius: 15px;
+  transition: 0.3s;
+  text-align: center;
+  
+}
+
+.service-card i {
+  font-size: 40px;
+  color: #00b3ff;
+  margin-bottom: 15px;
+  
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  border: 2px solid #008ecc;
+}
+
+/* ✅ ABOUT PREVIEW */
+.about-preview {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 60px 8%;
+  flex-wrap: wrap;
+    text-align: center;
+}
+
+.about-preview img {
+  border-radius: 20px;
+}
+@media screen and (max-width: 768px) {
+  .about-preview img {
+   max-width: 100%;
+   height: auto;
+  }
+}
+a:focus,
+button:focus {
+    outline: 2px solid #00b3ff;
+}
+
+.about-preview .btn-secondary {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 20px;
+  border: 2px solid #008ecc;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  
+  transition: 0.3s;
+  background-color: #008ecc;
+}
+
+.about-preview .btn-secondary:hover {
+  background: #00b3ff;
+  color: #fff;
+}
+
+/* ✅ PORTFOLIO PREVIEW */
+.portfolio-preview {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio-grid img {
+  width: 300px;
+  height: 400px;
+  border-radius: 15px;
+  object-fit: cover;
+    transition: 0.3s;
+}
+.portfolio-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ✅ NEWSLETTER */
+.newsletter {
+  padding: 40px 20px;
+  text-align: center;
+}
+.newsletter>h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+    
+}
+.newsletter>input {
+  padding: 12px;
+  width: 250px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 16px;
+}
+.newsletter>input:focus {
+  border-color: #00b3ff;
+  outline: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.newsletter button {
+  padding: 12px 20px;
+  background: #00b3ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
 }

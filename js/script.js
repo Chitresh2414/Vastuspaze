@@ -1,4 +1,5 @@
-const toggleBtn = document.querySelector('.navbar-toggle i');
+function phonemenu(){
+    const toggleBtn = document.querySelector('.navbar-toggle i');
 const mobileMenu = document.querySelector('.navbar-phone');
 
 toggleBtn.addEventListener('click', () => {
@@ -7,7 +8,11 @@ toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('ri-close-line');
 });
 
- const swiper = new Swiper(".mySwiper", {
+}
+phonemenu();
+
+function Slider(){
+     const swiper = new Swiper(".mySwiper", {
     loop: true,
     autoplay: {
       delay: 2000, // 2 seconds
@@ -20,3 +25,8 @@ toggleBtn.addEventListener('click', () => {
     effect: "slide", // You can change to "fade" for smooth effect
     speed: 800
   });
+
+}
+Slider();
+
+
