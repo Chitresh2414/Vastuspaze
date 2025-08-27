@@ -380,6 +380,8 @@ main {
   font-size: 2rem;
   margin-bottom: 40px;
   color: #333;
+  text-transform: uppercase;
+  font-weight: 600;
     
 }
 
