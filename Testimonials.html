@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials</title>
-     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/testimonial.css">
 </head>
+
 <body>
-     <!-- Header start -->
+    <!-- Header start -->
     <header>
         <!-- Navbar start -->
         <nav>
@@ -52,7 +57,204 @@
         <!-- Navbar end -->
     </header>
     <!-- Header end -->
+    <!-- Main start -->
+     
+    <main>
+        <div class="container">
+            <h2 class="text-center font-size">TESTIMONIALS</h2>
+            <p class="text-center">What our clients say about our work</p>
+          </div>
+        <div class="min-h-screen flex items-center justify-center p-6">
+        <div class="grid lg:grid-cols-2 gap-6 w-full max-w-6xl">
+
+            <!-- Left Big Card -->
+            <div class="bg-white rounded-2xl p-8 shadow-md flex flex-col justify-between">
+              <div>
+                <h2 class="text-5xl font-bold text-[#0f3d3e]">8X</h2>
+                <p class="text-xl font-semibold text-[#0f3d3e] mt-2">Increase in conversion rate</p>
+                <p class="mt-6 text-gray-700">
+                  “Our living room feels like a luxury hotel now. The design team blended modern and traditional elements beautifully. Guests can’t stop complimenting the space!”
+                </p>
+              </div>
+              <div class="flex items-center mt-6">
+                <img src="https://i.pravatar.cc/50?img=12" class="w-12 h-12 rounded-full mr-4" alt="">
+                <div>
+                  <p class="font-semibold text-[#0f3d3e]">Ananya Sharma</p>
+                  <p class="text-sm text-gray-600">Pune</p>
+                </div>
+              </div>
+            </div>
+        
+            <!-- Right Section -->
+            <div class="grid grid-rows-[auto_auto] gap-6">
+        
+              <!-- Top Right Card -->
+              <div class="bg-white rounded-2xl p-8 shadow-md">
+                <h2 class="text-3xl font-bold text-[#0f3d3e]">2X</h2>
+                <p class="text-lg font-semibold text-[#0f3d3e] mt-2">Increase in lead generation</p>
+                <p class="mt-6 text-gray-700">
+                  "They completely transformed our office space. The new design not only looks stunning but also boosts productivity and makes our employees feel at home."
+                </p>
+                <div class="flex items-center mt-6">
+                  <img src="https://i.pravatar.cc/50?img=5" class="w-12 h-12 rounded-full mr-4" alt="">
+                  <div>
+                    <p class="font-semibold text-[#0f3d3e]">Rajiv Mehta</p>
+                    <p class="text-sm text-gray-600">Founder, TechNova</p>
+                  </div>
+                </div>
+              </div>
+        
+              <!-- Bottom Slider -->
+              <div class="relative overflow-hidden h-72">
+                <div id="testimonial-groups" class="relative h-full">
+        
+                  <!-- Group 1 -->
+                  <div class="group">
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-500 slide-up">
+                      <p class="text-gray-700">“From color selection to furniture placement, every detail was carefully thought through. They turned our small apartment into a warm, spacious home.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=8" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Kavita & Ramesh</p>
+                          <p class="text-sm text-gray-600">Mumbai</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-1000 slide-left">
+                      <p class="text-gray-700">“We were amazed at how quickly the team understood our vision. The kitchen redesign is practical, elegant, and perfect for family gatherings.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=9" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Pooja Nair</p>
+                          <p class="text-sm text-gray-600">Bangalore</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Group 2 -->
+                  <div class="group">
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-500 slide-up">
+                      <p class="text-gray-700">“The team’s creativity is unmatched! They gave our café a chic, modern vibe that our customers absolutely love. Sales have gone up since the redesign.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=10" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Sandeep Gupta</p>
+                          <p class="text-sm text-gray-600">Café Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-1000 slide-left">
+                      <p class="text-gray-700">“They designed our new showroom with such style and elegance. It has completely elevated our brand image and made a strong impression on clients.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=11" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Amit Khanna</p>
+                          <p class="text-sm text-gray-600">Jewellery Business Owner</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Group 3 -->
+                  <div class="group">
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-500 slide-up">
+                      <p class="text-gray-700">“We wanted a cozy, kid-friendly bedroom. The final result was beyond our expectations — safe, stylish, and playful. Our daughter loves it!”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=14" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Sneha & Aditya</p>
+                          <p class="text-sm text-gray-600">Delhi</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-1000 slide-left">
+                      <p class="text-gray-700">“What impressed me most was their ability to combine aesthetics with functionality. My study room is now the perfect mix of elegance and productivity.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=15" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Dr. Neelam Patil</p>
+                          <p class="text-sm text-gray-600">Architect</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                  <!-- Group 4 -->
+                  <div class="group">
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-500 slide-up">
+                      <p class="text-gray-700">“They transformed our dull balcony into a peaceful, green escape. It’s now our favorite spot for morning coffee and evening relaxation.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=16" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Vikram & Sonali</p>
+                          <p class="text-sm text-gray-600">Hyderabad</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/2 bg-white rounded-2xl p-6 shadow-md transition-all duration-1000 slide-left">
+                      <p class="text-gray-700">“Their design made our wedding hall truly unforgettable. The elegant interiors, lighting, and decor created the perfect atmosphere for our big day.”</p>
+                      <div class="flex items-center mt-4">
+                        <img src="https://i.pravatar.cc/50?img=17" class="w-10 h-10 rounded-full mr-3" alt="">
+                        <div>
+                          <p class="font-semibold text-[#0f3d3e]">Arjun & Priya</p>
+                          <p class="text-sm text-gray-600">Newlyweds</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        
+                </div>
+              </div>
+        
+            </div>
+          </div>
+        </div>
+    </main>
+    <!-- Main end -->
+              <!-- Footer start -->
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h3>Vastuspaze</h3>
+                <p>Your trusted partner in creating dream spaces with modern designs and Vastu principles.</p>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-links">
+
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="Index.html">Home</a></li>
+                    <li><a href="About-us.html">About Us</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p><i class="ri-mail-add-line"></i>Email: info@vastuspaze.com</p>
+                <p><i class="ri-cellphone-line"></i>Phone: +91 98765 43210</p>
+                <div class="footer-social">
+                    <a href="#" class="facebook"><i class="ri-facebook-fill"></i></a>
+                    <a href="#" class="instagram"><i class="ri-instagram-line"></i></a>
+                    <a href="#" class="twitter"><i class="ri-twitter-x-line"></i></a>
+                    <a href="#" class="linkedin"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Vastuspaze. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
     <script src="./js/script.js"></script>
+    <script src="./js/testimonial.js"></script>
 
 </body>
+
 </html>

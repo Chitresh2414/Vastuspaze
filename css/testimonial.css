@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+
+body {
+    background: #f9f9f9;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.slide-up {
+    transform: translateY(-120%);
+    opacity: 0;
+}
+
+.slide-left {
+    transform: translateX(-120%);
+    opacity: 0;
+}
+
+.active {
+    transform: translate(0, 0);
+    opacity: 1;
+}
+
+/* Smooth transition */
+.transition-all {
+    transition: all 2s ease;
+}
+
+.group {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+    .testimonial-card {
+        max-width: 90%;
+    }
+}
