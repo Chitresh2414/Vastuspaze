@@ -79,11 +79,12 @@ nav {
 
 /* ✅ Logo */
 .navbar-logo img {
-    width: 160px;
+    width: 200px;
     height: auto;
     margin: 0px 80px;
     cursor: pointer;
     animation: x 0.5s ease-in-out;
+    object-fit: cover;
 }
 
 @keyframes x {
@@ -135,6 +136,7 @@ nav {
     .navbar-logo img {
         width: 140px;
         margin: 0;
+        height: auto;
     }
 
     .navbar-toggle {
@@ -145,8 +147,8 @@ nav {
         display: none;
         position: absolute;
         top: 52px;
-        right: 5px;
-        background: rgba(212, 207, 207, 0.398);
+        right: 1rem;
+        background: rgba(212, 207, 207, 0.721);
         width: 200px;
         flex-direction: column;
         box-shadow: 0 5px 10px rgba(51, 50, 50, 0.5);
