@@ -148,10 +148,10 @@ nav {
         position: absolute;
         top: 52px;
         right: 1rem;
-        background: rgba(212, 207, 207, 0.721);
+        background: rgba(246, 242, 242, 0.976);
         width: 200px;
         flex-direction: column;
-        box-shadow: 0 5px 10px rgba(51, 50, 50, 0.5);
+        box-shadow: 0 5px 10px rgba(51, 50, 50, 0.303);
         padding: 1rem;
         z-index: 999;
         border-radius: 8px;
