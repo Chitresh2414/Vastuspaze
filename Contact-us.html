@@ -59,73 +59,102 @@
 
     <!-- Main start -->
     <main>
-        <!-- Contact Section Start -->
-        <section>
+        <section class="contact-section">
             <div class="contact-container">
+
+                <!-- Contact Form Section -->
                 <div class="contact-form-section">
                     <h2>Contact Information</h2>
                     <div class="contact-form-container abc">
                         <h3 class="title">Get in Touch</h3>
-                        <form class="contact-form">
+                        <form class="contact-form" id="contactForm">
                             <label for="name">Your Name</label>
                             <input type="text" id="name" placeholder="Your Name" required>
-                            <label for="phone">Phone number</label>
+
+                            <label for="phone">Phone Number</label>
                             <input type="text" id="phone" placeholder="Your Phone Number" required>
+
                             <label for="email">Your Email</label>
                             <input type="email" id="email" placeholder="Your Email" required>
+
                             <label for="message">Your Message</label>
                             <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
                             <button type="submit">Send Message</button>
                         </form>
-                    </div>
-                </div>
-                <div>
-                    <p  id="des">If you have any questions or inquiries, feel free to reach out to us!</p>
 
-                    <div class="Contact abc ">
+                    </div>
+
+                    <!-- FAQ Section (First) -->
+                    <div class="faq">
+                        <h3>Frequently Asked Questions</h3>
+
+                        <div class="question">How long does a typical interior design project take?</div>
+                        <div class="answer">Most projects take between 4-8 weeks, depending on size and complexity.
+                        </div>
+
+                        <div class="question">Do you offer free consultation?</div>
+                        <div class="answer">Yes! We provide a 30-minute free consultation for new clients to understand
+                            your needs.</div>
+
+                        <div class="question">Can you work within my budget?</div>
+                        <div class="answer">Absolutely. We design custom solutions that fit your style and budget
+                            requirements.</div>
+                    </div>
+
+                </div>
+
+                <!-- Contact Info / Map / Business Hours -->
+                <div>
+                    <p id="des">If you have any questions or inquiries, feel free to reach out to us!</p>
+
+                    <!-- Contact Info Cards -->
+                    <div class="Contact abc">
                         <h3 class="title">Contact Information</h3>
                         <div class="contact-information">
+                            <div class="contact-info">
+                                <h3><i class="ri-phone-line icon"></i>Phone</h3>
+                                <span>+1 (234) 567-890</span>
+                            </div>
 
                             <div class="contact-info">
-                                <h3><i class="ri-phone-line icon"></i>Phone</h3><span>+1 (234) 567-890</span>
+                                <h3><i class="ri-map-pin-line icon"></i>Address</h3>
+                                <span>123 Vastu St, City, Country</span>
                             </div>
 
                             <div class="contact-info">
-                                <h3><i class="ri-map-pin-line icon"></i>Address</h3><span>123 Vastu St, City,
-                                    Country</span>
+                                <h3><i class="ri-mail-line icon"></i>Email</h3>
+                                <span>info@vastuspaze.com</span>
                             </div>
-                            <div class="contact-info">
-                                <h3><i class="ri-mail-line icon"></i>Email</h3><span>info@vastuspaze.com</span>
-                            </div>
-                            <div class="map-container">
-                                <div class="map">
-                                    <iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019678514634!2d-122.41941508468192!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2f8b8b8b%3A0x4a4a4a4a4a4a4a4a!2s123%20Vastu%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
-                                        loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                                </div>
-                            </div>
+                        </div>
 
+                        <!-- Map -->
+                        <div class="map-container">
+                            <div class="map">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019678514634!2d-122.41941508468192!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c2f8b8b8b%3A0x4a4a4a4a4a4a4a4a!2s123%20Vastu%20St%2C%20San%20Francisco%2C%20CA%2094103%2C%20USA!5e0!3m2!1sen!2sin!4v1600000000000!5m2!1sen!2sin"
+                                    loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- Business Hours (After FAQ & Contact Info) -->
                     <div class="business-hours abc">
                         <h3 class="title">Business Hours</h3>
                         <div class="business">
                             <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
                             <p>Saturday: 10:00 AM - 4:00 PM</p>
                             <p>Sunday: Closed</p>
-
                         </div>
-
                     </div>
-
                 </div>
+
             </div>
         </section>
-        <!-- Contact Section End -->
     </main>
+
     <!-- Main end -->
-         <!-- Footer start -->
+    <!-- Footer start -->
     <footer class="footer">
         <div class="footer-container">
             <!-- About Section -->
@@ -164,7 +193,7 @@
         </div>
     </footer>
     <!-- Footer end -->
-
+    <script src="./js/contact.js"></script>
     <script src="./js/script.js"></script>
 
 </body>

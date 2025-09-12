@@ -470,24 +470,30 @@ main {
 .portfolio-preview {
     padding: 60px 8%;
     text-align: center;
+    background-color: #e0e0e0;
 }
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
     gap: 20px;
     padding: 20px;
 }
 
 .portfolio-grid img {
-    width: 300px;
+    width: 100%;
     height: 400px;
+    max-width: 300px;
     border-radius: 15px;
     object-fit: cover;
     transition: 0.3s ease-in-out;
 }
-
+@media (max-width: 480px) {
+  .portfolio-grid img {
+    max-width: 180px;    /* chhota size phones pe */
+  }
+}
 .portfolio-grid img:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
