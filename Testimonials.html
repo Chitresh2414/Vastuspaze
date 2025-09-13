@@ -65,6 +65,34 @@
       <h1 class="text-center">TESTIMONIALS</h1>
       <p class="text-center">What our clients say about our work</p>
     </div>
+      <!-- Button to open dialog -->
+       <div class="flex items-center justify-center">
+  <button id="openBtn" class="bg-[#00b3ff] text-white px-6 py-3 rounded-full hover:bg-[#008ecc] transition">
+    Write a Review
+  </button>
+</div>
+
+  <!-- Dialog -->
+  <div id="reviewDialog" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-50">
+    <div class="bg-white rounded-xl shadow-lg w-2/5 p-8 relative max-h-[90vh] overflow-auto">
+      <button id="closeBtn" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800">&times;</button>
+      <h2 class="text-xl font-semibold mb-4">Write Your Review</h2>
+  
+      <form id="reviewForm" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSfynYYG2AT8bJjyXnPrZl_0HUS8RsIPCL-AX18bzyzgffRe-A/formResponse" method="POST" class="space-y-4">
+        <!-- Name field -->
+        <input type="text" name="entry.758940288" placeholder="Enter your name" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+  
+        <!-- Review field -->
+        <textarea name="entry.1029134774" placeholder="Write your review" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 h-32" required></textarea>
+  
+        <button type="submit" class="bg-[#00b3ff] text-white px-4 py-2 rounded-lg hover:bg-[#008ecc] transition w-full">
+          Submit Review
+        </button>
+      </form>
+      <iframe name="hidden_iframe" style="display:none;"></iframe>
+    </div>
+  </div>
+  
     <div class="min-h-screen flex items-center justify-center p-6">
       <div class="grid lg:grid-cols-2 gap-6 w-full max-w-6xl">
 
